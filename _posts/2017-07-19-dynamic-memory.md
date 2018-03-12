@@ -47,7 +47,9 @@ void NemoGame::spawn()
 Some screenshot examples...
 <figure>
 	<a href="http://farm9.staticflickr.com/8426/7758832526_cc8f681e48_b.jpg"><img src="https://raw.githubusercontent.com/jack-king1/jack-king1.github.io/master/assets/img/NemoGame_LoadScreen.PNG?token=AexHW6x8LH4ApygCH3MKyqveXdAS1AaLks5asDfhwA%3D%3D"></a>
-	<figcaption><a href="http://www.flickr.com/photos/80901381@N04/7758832526/" title="Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr">Morning Fog Emerging From Trees by A Guy Taking Pictures, on Flickr</a>.</figcaption>
 </figure>
 
+<figure>
+<a href="https://raw.githubusercontent.com/jack-king1/jack-king1.github.io/master/assets/img/NemiGame_Playing.PNG?token=AexHW4i2LNPZNfiaZaPayfZVXXNWcvHGks5asEq4wA%3D%3D"></a>
+</figure>
 
