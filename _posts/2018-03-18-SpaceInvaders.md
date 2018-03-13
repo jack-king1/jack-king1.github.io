@@ -36,7 +36,7 @@ Some screenshot examples...
 </figure>
 
 <figure>
-<a><img src="https://raw.githubusercontent.com/jack-king1/jack-king1.github.io/master/assets/img/Pong_GamePlay.PNG?token=AexHW_cfvohQNErX0w6zaH5Cnq7zCCYTks5asTjAwA%3D%3D"></a>
+<a><img src="https://raw.githubusercontent.com/jack-king1/jack-king1.github.io/master/assets/SpaceInvaders_GamePlay.PNG?token=AexHW5LXpLewaEgtDt7GW9I_471kCkaWks5asVG7wA%3D%3D"></a>
 </figure>
 
 <figure>
