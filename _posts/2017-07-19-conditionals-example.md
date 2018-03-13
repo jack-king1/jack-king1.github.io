@@ -1,33 +1,55 @@
 ---
 layout: post
-title:  "Conditional Loops"
-date:   2017-07-19
-excerpt: "An intro into conditional loops."
+title:  "Pong Game - Assignment"
+date:   2018-03-13
+excerpt: "Pong Game"
 tag:
-- blog 
+- blog
 - c++
-- code snippets
 - low level programming
-- 101
+- Pong
 comments: true
 published: true
 ---
+**Pong Game** The classic game "Pong" recreated by me. The game has single and multiplayer options. The balls can also collide while travelling making for interesting and unique gameplay.<br/>
 
-C++ offers several simple and easy ways to loop. Loops can be used to process the same logic a number of times. The most common is the for loop, followed by while and the do-while. These loops are known as conditional because they continue to loop until a specific condition is met.
 
-## The For Loop
------
+#### What techniques did i use?
+- Vectors
+- Bounding Boxes
+- Collision Detection (Registers when the ball hits another ball/paddle.)
+<br/>
 
-The for loop is simply defined using:
-1. An initial value
-2. A condition to check the value against after every iteration
-3. An operation to perform after every iteration
 
-```C++ 
-for( int i=0; i<10; ++i )
-{
-  // Logic goes here...
-}
+#### How do we check the click is within sprite bounding box?
+```C++
+	auto x_pos = clownfish->xPos();
+	auto y_pos = clownfish->yPos();
+
+	if ((x < (x_pos + clownfish->width()) && x > x_pos) && 
+		(y < (y_pos + clownfish->height()) && y > y_pos))
+	{
+		return true;
+	}
+
+	return false;
 ```
 
-As you can see it's basic usage is simple and easy to reason. 
+#### How do we reset position?
+~~~ C++
+void NemoGame::spawn()
+{
+	clownfish->xPos(rand() % game_width);
+	clownfish->yPos(rand() % game_height);
+}
+~~~
+
+Some screenshot examples...
+<figure>
+<a><img src="https://raw.githubusercontent.com/jack-king1/jack-king1.github.io/master/assets/img/NemoGame_LoadScreen.PNG?token=AexHW6x8LH4ApygCH3MKyqveXdAS1AaLks5asDfhwA%3D%3D"></a>
+</figure>
+
+<figure>
+<a><img src="https://raw.githubusercontent.com/jack-king1/jack-king1.github.io/master/assets/img/NemiGame_Playing.PNG?token=AexHW7GG8eT9HCpR71tDjeB9O2AwdENyks5asEuEwA%3D%3D"></a>
+</figure>
+
