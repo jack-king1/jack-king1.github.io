@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Dynamic Memory 101"
+title:  "Nemo Game Worksheet"
 date:   2017-07-19
 excerpt: "Nemo Game"
 tag:
