@@ -1,25 +1,51 @@
 ---
 layout: project
 title: "Tickety"
-date: 2014-04-25 16:54:46
+date: 2023-04-25 16:54:46
 author: Jack King
 categories:
     - project
 img: tickety.png
 thumb: thumb02.jpg
 carousel:
-    - single01.jpg
-    - single02.jpg
-    - single03.jpg
-tagged: Flat, UI, Development
-client: Wonder Corp.
-website: http://blacktie.co
+    - tickety01.png
+    - tickety02.png
+    - tickety03.png
+tagged: Web Development, React
+client:
+website:
 ---
 
 #### Tickety
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<h2>What is Tickety?</h2>>
+Tickety is an ecommerce website that solves the problem of printing display tickets manually by getting a third party to do the hard work (Tickety). Targeting butchers, bakeries and deli's. Users can create an account, keep track of tickets and in the future be able to order and buy custom tickets which will be sent straight to their door.
 
-#### Our Proposal
+<iframe width="560" height="315" src="https://www.youtube.com/embed/18aOWCyMgvQ?si=pyKxUcmOJx0b2cln" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<h3>Technologies</h3>
+<ul>
+<li>React</li>
+<li>Database</li>
+<li>Bootstrap</li>
+<li>NodeJS</li>
+<li>SQL</li>
+<li>Express</li>
+<li>Azure mySQL</li>
+<li>Azure Web Services</li>
+<li>Stripe API</li>
+<li>Google OAuth</li>
+<li>NPM</li>
+ </ul>
+
+ <h3>Current Features</h3>
+ <ol>
+<li>Google Login/Account Creation</li> 
+<li>Create custom tickets and save to azure database</li> 
+<li>Buy products using stripe</li> 
+<li>Shopping Cart with UI updates</li> 
+ </ol>
+
+ <h3><a href="https://github.com/jack-king1/Tickety" target="_blank" >Github</a></h3>
+
+#### -
