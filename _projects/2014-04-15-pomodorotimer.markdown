@@ -8,18 +8,53 @@ categories:
 img: pomodoro.png
 thumb: thumb02.jpg
 carousel:
-    - single01.jpg
-    - single02.jpg
-    - single03.jpg
-tagged: Flat, UI, Development
-client: Wonder Corp.
-website: http://blacktie.co
+    - pomodoro01.jpg
+    - pomodoro02.jpg
+    - pomodoro03.jpg
+tagged: React, Web Development, MSSQL, API
+client:
+website:
 ---
 
 #### Pomodoro Timer
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<h2>What is PomoRelax?</h2>>
+Pomorelax is a pomodoro timer with a todo list. Users can sign in using google, save to do lists to be available from any pc.
 
-#### Our Proposal
+<img src="{{ "/assets/img/project/pomodoro.gif" | prepend: site.baseurl
+                }}">
 
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<h3>Technologies</h3>
+<ul>
+<li>React</li>
+<li>Tailwind</li>
+<li>MSSQL</li>
+<li>NodeJS</li>
+<li>Express</li>
+<li>Google OAuth</li>
+<li>Fetch / API</li>
+<li>Pexels API</li>
+ </ul>
+
+ <h3>Current Features</h3>
+ <ol>
+<li>Pomodoro Timer</li> 
+<li>Login with google</li> 
+<li>Save tasks to database</li> 
+ </ol>
+
+ <h3>Future Features</h3>
+  <ul>
+<li>Customse pomodoro dashboard</li> 
+<li>customisable background images, currently its random image with a theme "nature".</li> 
+<li>Toggle light/dark mode</li> 
+<li>Movable widgets using canvas or a third party library.</li>
+ </ul>
+
+ <h3>Post-Mortem</h3>
+ <h4>What I Learned</h4>
+ <p>So far i have learned about how to implement timers in a browser where users are swapping windows and ensuring the timer stays the correct time due to resource allocation and intervals running slower when tabbed. I overcame this by using date and the difference between when the timer started and the current time. I also added google OAuth login so users can access their todos from different machines.</p>
+
+ <h3><a href="https://github.com/jack-king1/RelaxingPomodoro" target="_blank" >Github</a></h3>
+
+#### -
