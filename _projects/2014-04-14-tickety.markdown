@@ -45,7 +45,10 @@ Tickety is an ecommerce website that solves the problem of printing display tick
 <li>Buy products using stripe</li> 
 <li>Shopping Cart with UI updates</li> 
  </ol>
-
- <h3><a href="https://github.com/jack-king1/Tickety" target="_blank" >Github</a></h3>
-
-####
+ 
+  <div style="display: flex;justify-content: center;align-items:center;margin:5px">
+    <div><a href="https://github.com/jack-king1/Tickety" target="_blank" >
+<img src="{{ "/assets/img/project/github.svg" | prepend: site.baseurl
+                }}"></a></div>
+                <h2>GitHub</h2>
+</div>

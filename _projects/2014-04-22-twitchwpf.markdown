@@ -16,10 +16,26 @@ client: Wonder Corp.
 website: http://blacktie.co
 ---
 
-#### Tron Game/Twitch/WPF
+#### TwitchDash
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+<h3>About</h3>
+TwitchDash is targeted at twitch streamers for the platform "Twitch". The plan is to allow users to manage their stream from their desktop easily and efficiently by running ads at given intervals, user selecter random spinner, chat logs and more all using the Twitch API on a WPF application.
 
-#### Our Proposal
+#### Technology
 
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<ul>
+<li>.Net Framework</li>
+<li>C#</li>
+<li>Visual Studio</li>
+<li>Git</li>
+<li>XAML</li>
+</ul>
+
+<h3>Currently work in progress</h3>
+Updates coming soon!
+
+<div style="display: flex;justify-content: center;align-items:center;margin:5px">
+    <div><a href="https://github.com/jack-king1/TwitchDesktopUserUtilities" target="_blank" >
+<img src="{{ "/assets/img/project/github.svg" | prepend: site.baseurl
+                }}"></a></div>
+    <h2>GitHub</h2>

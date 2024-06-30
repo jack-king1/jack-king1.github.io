@@ -63,5 +63,3 @@ Unit testing was also something i touched on for the first time during this proj
                 }}"></a></div>
                 <h2>GitHub</h2>
 </div>
-
-####

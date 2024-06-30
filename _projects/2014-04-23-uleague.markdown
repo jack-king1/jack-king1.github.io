@@ -34,7 +34,7 @@ Using the Riot Games API this website gets live summoner data on players searche
 <li>Visual Studio</li>
 <li>Bootstrap</li>
 <li>CD/CI deployment whenever i make a git push.</li>
-</ul>>
+</ul>
 
 <img src="{{ "/assets/img/project/ul4.png" | prepend: site.baseurl
                 }}">
