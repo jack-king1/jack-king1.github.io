@@ -48,6 +48,9 @@ The goal of the project was to produce an experience in VR. We decided on an edu
 
 <p>As my role was "Project Manager" my primary role was to ensure the team was on track and ensuring the project was running smoothly. I used the SCRUM method which is an agile framework which is great for completing complex projects. We had an external client who acted as our External Stakeholder. Our tutors which acted as a psudo stakeholder, me as Project Manager and our team the Scrum Team who took on different roles such as Lead Programmer and Audio Manager. We would meet weekly to discuess tasks, progress and any blockers. The team also could come to me to sort out any other issues regarding the project.</p>
 
+<img src="{{ "/assets/img/project/scrum.png" | prepend: site.baseurl
+                }}">
+
 <h2>What i learned</h2>
 <ul>
 <li>Leading a team in a scrum/agile environment</li>
