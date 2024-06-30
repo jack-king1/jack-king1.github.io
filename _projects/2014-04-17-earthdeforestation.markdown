@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "Earth Deforestation"
+title: "Earth Deforestation Virtual Reality"
 date: 2020-04-25 16:54:46
 author: Jack King
 categories:
@@ -19,7 +19,7 @@ client: University of the West of England
 website:
 ---
 
-#### Earth Deforestation
+#### Earth Deforestation VR (Occulous Quest)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5w7jlHQLG6Q?si=ZqrqfJdNHS5ymDwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -37,19 +37,23 @@ website:
 The goal of the project was to produce an experience in VR. We decided on an educational experience on the topic of deforestation as it is very relevant today. The project used audio and visuals to inform the user and it was meant to be used by people of all ages so we decided against incorporating hand controls. We didn’t want people to be distracted by not knowing how to use the controls.
 
 <h3>Overview</h3>
-<p>It starts off showing the earth as dying planet as the player zooms in then fades to a scene in a “amazon rainforest” and a voice over provides information about the amazon and how it helps earth. It transitions to a scene a scene where the player is burning down the forest based on where they look whilst the voice over starts talking about the damage that is done to amazon every year. It then talks about how the user can help prevent more destruction before fading out then zooming out the earth as it turns from a murky brown to a vibrant green.</p>
+<p>It starts off showing the earth as a dying planet as the player zooms in then fades to a scene in a “amazon rainforest” and a voice over provides information about the amazon and how it helps earth. It transitions to a scene where the player is burning down the forest based on where they look whilst the voice over starts talking about the damage that is done to amazon every year. It then talks about how the user can help prevent more destruction before fading out then zooming out the earth as it turns from a murky brown to a vibrant green.</p>
 
 <img src="{{ "/assets/img/project/earth6.png" | prepend: site.baseurl
                 }}">
 
 <p>My primary job was project manager but I also had a strong input on most of the development and design. I implemented the VR controls scene progression and layout and scripting. I also implemented an audio manager which handled all the sounds. The low poly design was to ensure it ran efficiently on the occulus quest with all the effects and assets in the scene. With higher quality textures and models the oculus quest most likely would have ran into performance issues.</p>
 
+#### Project Management
+
+<p>As my role was "Project Manager" my primary role was to ensure the team was on track and ensuring the project was running smoothly. I used the SCRUM method which is an agile framework which is great for completing complex projects. We had an external client who acted as our External Stakeholder. Our tutors which acted as a psudo stakeholder, me as Project Manager and our team the Scrum Team who took on different roles such as Lead Programmer and Audio Manager. We would meet weekly to discuess tasks, progress and any blockers. The team also could come to me to sort out any other issues regarding the project.</p>
+
 <h2>What i learned</h2>
 <ul>
 <li>Leading a team in a scrum/agile environment</li>
 <li>Improved my VR skills and programming</li>
 <li>C#</li>
-<li>Contimplating design decisions based on hardware limitations.</li>
+<li>Contemplating design decisions based on hardware limitations.</li>
 <li>How the public perceive the topic of deforestation.</li>
 </ul>
 
@@ -62,5 +66,3 @@ This project was made for educational purposes only.
                 }}"></a></div>
                 <h2>GitHub</h2>
 </div>
-
-####

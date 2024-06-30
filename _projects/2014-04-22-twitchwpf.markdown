@@ -5,7 +5,7 @@ date: 2014-04-25 16:54:46
 author: Jack King
 categories:
     - project
-img: uleague.png
+img: twitchcover.png
 thumb: thumb02.jpg
 carousel:
     - twitchdemo.png
