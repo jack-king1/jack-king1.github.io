@@ -31,7 +31,8 @@ TwitchDash is targeted at twitch streamers for the platform "Twitch". The plan i
 <li>XAML</li>
 </ul>
 
-<h3>Currently work in progress</h3>
+#### Currently Work in Progress
+
 Updates coming soon!
 
 <div style="display: flex;justify-content: center;align-items:center;margin:5px">
