@@ -48,4 +48,4 @@ Tickety is an ecommerce website that solves the problem of printing display tick
 
  <h3><a href="https://github.com/jack-king1/Tickety" target="_blank" >Github</a></h3>
 
-#### -
+####

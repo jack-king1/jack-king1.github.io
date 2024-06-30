@@ -55,6 +55,11 @@ Pomorelax is a pomodoro timer with a todo list. Users can sign in using google, 
  <h4>What I Learned</h4>
  <p>So far i have learned about how to implement timers in a browser where users are swapping windows and ensuring the timer stays the correct time due to resource allocation and intervals running slower when tabbed. I overcame this by using date and the difference between when the timer started and the current time. I also added google OAuth login so users can access their todos from different machines.</p>
 
- <h3><a href="https://github.com/jack-king1/RelaxingPomodoro" target="_blank" >Github</a></h3>
+ <div style="display: flex;justify-content: center;align-items:center;margin:5px">
+    <div><a href="https://github.com/jack-king1/RelaxingPomodoro" target="_blank" >
+<img src="{{ "/assets/img/project/github.svg" | prepend: site.baseurl
+                }}"></a></div>
+                <h2>GitHub</h2>
+</div>
 
-#### -
+###

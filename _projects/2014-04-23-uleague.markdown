@@ -8,18 +8,39 @@ categories:
 img: uleague.png
 thumb: thumb02.jpg
 carousel:
-    - single01.jpg
-    - single02.jpg
-    - single03.jpg
-tagged: Flat, UI, Development
-client: Wonder Corp.
-website: http://blacktie.co
+    - ul1.png
+    - ul2.png
+    - ul3.png
+    - ul4.png
+    - ul5.png
+    - ul6.png
+tagged: Web Development, API, Project
+client:
+website: uleague
 ---
 
-#### uleague
+#### What is uleague?
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+Using the Riot Games API this website gets live summoner data on players searched (EU West Servers) and displays it back to them. It currently gives details on the players recently played matches and links to other players, items built, KDA, Creep Score etc. It also has functionality to display all champions lore with spell explanations - An additional feature i would like to add is displaying active live game data to the user before the game starts.
 
-#### Our Proposal
+#### Video
 
-It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u0s4UiwjH0g?si=3Gi-4Y3hivBxfL0h" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+#### Technology
+
+<ul>
+<li>C# ASP.NET</li>
+<li>Visual Studio</li>
+<li>Bootstrap</li>
+<li>CD/CI deployment whenever i make a git push.</li>
+</ul>>
+
+<img src="{{ "/assets/img/project/ul4.png" | prepend: site.baseurl
+                }}">
+
+<div style="display: flex;justify-content: center;align-items:center;margin:5px">
+    <div><a href="https://github.com/jack-king1/Race-to-Mars" target="_blank" >
+<img src="{{ "/assets/img/project/github.svg" | prepend: site.baseurl
+                }}"></a></div>
+    <h2>GitHub</h2>

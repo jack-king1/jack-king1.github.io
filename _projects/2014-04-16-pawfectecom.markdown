@@ -4,7 +4,7 @@ title: "Pawfect Ecom"
 date: 2024-03-15 16:54:46
 author: Jack King
 categories:
-    - project
+    - Project
 img: pawfect.png
 thumb: thumb02.jpg
 carousel:
@@ -12,8 +12,8 @@ carousel:
     - pawdesign1.png
     - pawfect.gif
 tagged: Web Development, React, Azure
-client:
-website:
+client: iungo
+website: https://github.com/jack-king1/244001-Jack-Ecommerce
 ---
 
 #### Pawfect Ecom
@@ -57,6 +57,11 @@ website:
 <p>This project allowed me to explore new techniques and technologies such as Azure, unit testing with Jest and some advanced React hooks. It also allowed me to cement some pre-existing knowledge and bring to the surface methods and techniques i hadn't used extensively before such as Callbacks. For example my use of React hooks was limited to useState and useEffect; for this project i implemented useContext which proved important in managing the basket state across multiple stages and saved prop drilling. Callbacks was helpful when setting state of the products as it triggered events that needed to know when a product had been added to the cart.
 Unit testing was also something i touched on for the first time during this project. I now understand the importance of unit testing in a larger code base that may be changing consistently and is handling sensitive data that might hinder user experience and use of the website.</p>
 
- <h3><a href="https://github.com/jack-king1/244001-Jack-Ecommerce" target="_blank" >Github</a></h3>
+<div style="display: flex;justify-content: center;align-items:center;margin:5px">
+    <div><a href="https://github.com/jack-king1/244001-Jack-Ecommerce" target="_blank" >
+<img src="{{ "/assets/img/project/github.svg" | prepend: site.baseurl
+                }}"></a></div>
+                <h2>GitHub</h2>
+</div>
 
-#### -
+####
