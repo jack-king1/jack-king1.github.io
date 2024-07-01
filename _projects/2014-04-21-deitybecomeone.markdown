@@ -44,6 +44,6 @@ The game is set in a city where the player is a block and has to progress throug
 
 #### Team
 
-Jack King - UI, Gameplay, Boss
-Lewis Bond - Level Builder, Level Design
-Evan Diamond - Gameplay Physics
+<p>Jack King - UI, Gameplay, Boss</p>
+<p>Lewis Bond - Level Builder, Level Design</p>
+<p>Evan Diamond - Gameplay Physics</p>
