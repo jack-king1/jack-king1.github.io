@@ -1,7 +1,7 @@
 ---
 layout: project
 title: ".Net TwitchDash WPF (WIP)"
-date: 2014-04-25 16:54:46
+date: 2024-06-29 16:54:46
 author: Jack King
 categories:
     - project
@@ -15,6 +15,10 @@ website:
 ---
 
 #### TwitchDash (WIP)
+
+## Check out my blog here!
+
+[TwitchDash Dev Diary 01]({% post_url 2014-04-25-twitchdash-devdiary-one %})
 
 <h3>About</h3>
 TwitchDash is targeted at twitch streamers for the platform "Twitch". The plan is to allow users to manage their stream from their desktop easily and efficiently by running ads at given intervals, user selecter random spinner, chat logs and more all using the Twitch API on a WPF application.

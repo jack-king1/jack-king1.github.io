@@ -33,7 +33,7 @@ The use of the keyword DataContext means that we dont have to be explicit when b
 <br>
 <p>With DataContext keyword</p>
 <code>Text="{Binding Name, UpdateSourceTrigger=PropertyChanged}"</code>
-<p>What this code is doing is binding the element this code is attached to to the variable in the viewModel. It will update the viewModel once the ProperyChanged WPF trigger has been activated. There is also a "LostFocus", "Explicit" and "Default" events.</p>
+<p>What this code is doing is binding the element this code is attached to to the variable in the viewModel. It will update the viewModel once the PropertyChanged WPF trigger has been activated. There is also a "LostFocus", "Explicit" and "Default" events.</p>
 <h3>Order of Events</h3>
 <ol>
 <li><b>View/User Interactions:</b> You type text into a TextBox in the UI (View).</li>
@@ -43,7 +43,7 @@ The use of the keyword DataContext means that we dont have to be explicit when b
 </ol>
 
 <h2>Summary</h2>
-Overall commands make for a great solution to DRY coding practices. Commands allow for the reuse of code via the RelayCommand and to quickly setup new commands for different features with similar functionality. In addition we touched on Binding and property changes using the INotifyPropertyChanged interface and why they are important in adhering to the MVVM architecture of WPF forms.
+Overall commands make for a great solution to DRY coding practices alongside the benefits of reducing coupling from view from viewModel and Model. Commands allow for the reuse of code via the RelayCommand and to quickly setup new commands for different features with similar functionality. In addition we touched on Binding and property changes using the INotifyPropertyChanged interface and why they are important in adhering to the MVVM architecture of WPF forms.
 
 Here is a good example of how to implement INotifypropertyChanged in WPF: [INotifyPropertyChanged in WPF][C#Corner]{:target="\_blank"}<br>
 And here is an example of how to implement ICommands in WPF: [ICommand in WPF][C#CornerCommands]{:target="\_blank"}

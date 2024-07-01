@@ -11,7 +11,7 @@ thumb: scrumthumb.png
 ---
 
 <h1>What is Scrum?</h1>
-Scrum is an agile framework that is great for breaking down complex projects into smaller digestable chunks. These chunks are generally referred to as a 
+Scrum is an agile framework that is great for breaking down complex projects into smaller digestable chunks. These chunks are generally referred to as an 
 Increment. These increments are the way Scrum measures progress and moves forward. These increments involve lots of planning and work by the entire scrum team. The increments consist of many moving parts from a scrum team, project owner, user stories, ceramonies, stakeholders and more.<!--more-->
 <br>
 
