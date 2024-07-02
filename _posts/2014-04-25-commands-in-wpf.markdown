@@ -20,6 +20,9 @@ Instead of creating a command class for every single different ICommand. It's mo
 
 What these two functions do is execute the passed function (execute) but also toggle the command on or off (canExecute). For example you might want to limit when the user can press the save button if no changes are present.
 
+<img src="{{ "/assets/img/blog/exampleviewmodelwithinterfaces02.png" | prepend: site.baseurl
+                }}">
+
 <h2>Property Changes</h2>
 Using the INotifyChanged allows the view to update when a value changes in the viewmodel class. We can bind a field inside the viewModel to a UI element and assign an event to notify the ui element of when that value changes, updating it in the process. We have to use the DataContext and assign it to the relating viewModel of the UI element for it to be able to access the viewModel. 
 <br>
