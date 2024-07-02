@@ -4,12 +4,10 @@ title: Contact
 permalink: /contact/
 ---
 
-<div id="contactwrap"></div>
-
 <div class="container mtb">
     <div class="row">
         <div class="col-lg-8">
-            <h4>Just Get In Touch!</h4>
+            <h4>Get In Touch!</h4>
             <div class="hline"></div>
             <p>{{ site.about }}</p>
             <form role="form">
@@ -51,21 +49,19 @@ permalink: /contact/
         <!--/col-lg-8 -->
 
         <div class="col-lg-4">
-            <h4>Our Address</h4>
-            <div class="hline"></div>
-            <p>
-                {% for line in site.address.first.lines %} {{ line }} <br />
-                {% endfor %}
-            </p>
-            <p>
-                Email: {{site.email}}<br />
-                Tel: {{site.tel}}
-            </p>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s.
-            </p>
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>Software Developer</h3>
+                <p>
+                    Experience with C#, Javascript, Web Development, Game
+                    Development, SQL, Scrum and More!
+                </p>
+            </div>
+            <div
+                class="col-lg-8 col-lg-offset-2 himg d-flex justify-content-center"
+            >
+                <img src="{{ "/assets/img/profile.jpeg" | prepend: site.baseurl
+                }}" class="img-responsive img-circle">
+            </div>
         </div>
     </div>
     <!--/row -->

@@ -34,25 +34,15 @@ collections:
 
 # Social networks usernames. Many more available: google-plus, flickr, linkedin, etc). Shown in footer.
 social:
-    - title: dribbble
-      url:
-    - title: facebook
-      url:
-    - title: twitter
-      url:
-    - title: instagram
-      url:
-    - title: tumblr
-      url:
+    - title: github
+      url: https://github.com/jack-king1
 
 # Postal address (add as many lines as necessary). Shown in footer and on Contact page.
 address:
     - lines:
-          - Some Ave, 987,
-          - 23890, New York,
-          - United States.
-email: hello@solidtheme.com
-tel: +34 8493-4893
+          - United Kingdom
+email: jackkingdevwork@gmail.com
+tel: n/a
 
 ### GENERAL DATA FOR VARIOUS LOCATIONS ###
 
@@ -107,10 +97,10 @@ clients:
       img: client04.png
 
 # Short text about your company. Shown in footer on every page and also separately on Home and Contact page.
-about: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+about: "If you like my projects or blog and want to discuss work opportunities or even taking part in a game jam, drop me an email!"
 
 # Testimonial content. Shown on Home and About page.
 testimonial:
-    message: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged."
-    author: Marcel Newman
-    position: WEB DESIGNER - BLACKTIE.CO
+    message: "A great software developer"
+    author: Jack King
+    position: Developer
