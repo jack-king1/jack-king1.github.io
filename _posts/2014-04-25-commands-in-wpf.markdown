@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Commands and UI Updates in WPF .Net"
-date: 2014-04-25 16:54:46
+date: 2024-06-26 16:54:46
 author: Jack King
 categories:
     - blog
