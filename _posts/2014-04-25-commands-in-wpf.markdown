@@ -49,7 +49,9 @@ The use of the keyword DataContext means that we dont have to be explicit when b
 Overall commands make for a great solution to DRY coding practices alongside the benefits of reducing coupling from view from viewModel and Model. Commands allow for the reuse of code via the RelayCommand and to quickly setup new commands for different features with similar functionality. In addition we touched on Binding and property changes using the INotifyPropertyChanged interface and why they are important in adhering to the MVVM architecture of WPF forms.
 
 Here is a good example of how to implement INotifypropertyChanged in WPF: [INotifyPropertyChanged in WPF][C#Corner]{:target="\_blank"}<br>
-And here is an example of how to implement ICommands in WPF: [ICommand in WPF][C#CornerCommands]{:target="\_blank"}
+And here is an example of how to implement ICommands in WPF: [ICommand in WPF][C#CornerCommands]{:target="\_blank"}<br>
+MSDN Docs how to implement INotifyPropertyChanged: [MSDN How To Implement INotifyPropertyChanged][msdnnotify]{:target="\_blank"}
 
 [C#Corner]: https://www.c-sharpcorner.com/article/explain-inotifypropertychanged-in-wpf-mvvm/#:~:text=INotifyPropertyChanged%20in%20ASP.NET%20MVC,synchronized%20data%20presentation%20in%20applications.
 [C#CornerCommands]: https://www.c-sharpcorner.com/UploadFile/e06010/wpf-icommand-in-mvvm/
+[msdnnotify]: https://learn.microsoft.com/en-us/dotnet/desktop/wpf/data/how-to-implement-property-change-notification?view=netframeworkdesktop-4.8

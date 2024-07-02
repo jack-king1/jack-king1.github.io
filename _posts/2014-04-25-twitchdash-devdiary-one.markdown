@@ -42,7 +42,12 @@ The font image generator used for the twitch diary banner: [FontMeme/TwitchLogoF
                 <h2>GitHub</h2>
 </div>
 
+<h2>Useful Resources</h2>
+XAML CheatSheet: [PDF File - wpf cheat sheet][xamlcheatsheet]{:target="\_blank"}<br>
+Twitch Font Generator to PNG: [FontMeme/TwitchLogoFont][twitchlogo]{:target="\_blank"}
+
 [litedb]: https://www.litedb.org/
 [mongodb]: https://www.mongodb.com/lp/cloud/atlas/try4?utm_source=bing&utm_campaign=search_bs_pl_evergreen_atlas_core_prosp-brand_gic-null_emea-gb_ps-all_desktop_eng_lead&utm_term=mongodb%20com&utm_medium=cpc_paid_search&utm_ad=e&utm_ad_campaign_id=415204562&adgroup=1213861306818022&msclkid=4186e528af4d1ae7f5c983ab8a299433
 [mysql]: https://dev.mysql.com/
 [twitchlogo]: https://fontmeme.com/twitch-logo-font/
+[xamlcheatsheet]: https://www.cheat-sheets.org/saved-copy/wpfcheatsheet.pdf

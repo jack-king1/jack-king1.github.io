@@ -17,6 +17,10 @@ Working from where i left off in dev diary one, i have begun working on function
 <img src="{{ "/assets/img/blog/deserializedtwitchdata.png" | prepend: site.baseurl
                 }}">
 
+<h2>Current Design Prototype</h2>
+<img src="{{ "/assets/img/blog/twitchdashwip02.png" | prepend: site.baseurl
+                }}">
+
 <h2>TwitchAPI</h2>
 This class is responsible for retrieving the users client and secret tokens. Currently this is stored in my environment variables for easy of use. This class has a an init method that setsup the users tokens and saves them for use by the program. It can also currently get informaton about a specific user via the display name/username. The init method is asyncronous to allow the program to contunue normally without freezing.
 <br>
