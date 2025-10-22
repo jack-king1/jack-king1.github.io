@@ -7,9 +7,9 @@ import {
   Button,
   SimpleGrid,
   IconButton,
-  Link,
   VStack,
   HStack,
+  Link,
 } from "@chakra-ui/react";
 import { Avatar, AvatarGroup } from "@chakra-ui/react";
 import {
@@ -43,29 +43,36 @@ export default function App() {
         borderColor={isLight ? "gray.200" : "gray.700"}
       >
         <Heading size="md">Jack King</Heading>
-        <HStack spacing={4}>
-          <Button variant="ghost" as={Link} href="#about">
-            About
+        <HStack gap={4}>
+          <Button variant="ghost">
+            <a href="#" data-disabled="" onClick={(e) => e.preventDefault()}>
+              About
+            </a>
           </Button>
-          <Button variant="ghost" as={Link} href="#projects">
-            Projects
+          <Button variant="ghost">
+            <a href="#" data-disabled="" onClick={(e) => e.preventDefault()}>
+              Projects
+            </a>
           </Button>
-          <Button variant="ghost" as={Link} href="#contact">
-            Contact
+          <Button variant="ghost">
+            <a href="#" data-disabled="" onClick={(e) => e.preventDefault()}>
+              Contact
+            </a>
           </Button>
           <IconButton
             aria-label="Toggle theme"
-            icon={isLight ? <FaMoon /> : <FaSun />}
             onClick={() => setTheme(isLight ? "dark" : "light")}
-          />
+          >
+            {isLight ? <FaMoon /> : <FaSun />}
+          </IconButton>
         </HStack>
       </Flex>
 
       {/* Hero */}
       <Container maxW="container.lg" py={24} textAlign="center">
-        <VStack spacing={6}>
+        <VStack gap={6}>
           <AvatarGroup>
-            <Avatar.Root>
+            <Avatar.Root size={"2xl"}>
               <Avatar.Fallback name="Segun Adebayo" />
               <Avatar.Image src="https://i.pravatar.cc/200" />
             </Avatar.Root>
@@ -76,31 +83,22 @@ export default function App() {
             A developer passionate about building clean, functional, and
             creative web experiences.
           </Text>
-          <HStack spacing={4}>
-            <IconButton
-              as={Link}
-              href="https://github.com/yourusername"
-              aria-label="GitHub"
-              icon={<FaGithub />}
-              size="lg"
-              isRound
-            />
-            <IconButton
-              as={Link}
-              href="https://linkedin.com/in/yourusername"
-              aria-label="LinkedIn"
-              icon={<FaLinkedin />}
-              size="lg"
-              isRound
-            />
-            <IconButton
-              as={Link}
-              href="mailto:your@email.com"
-              aria-label="Email"
-              icon={<FaEnvelope />}
-              size="lg"
-              isRound
-            />
+          <HStack gap={4}>
+            <IconButton aria-label="Github">
+              <a target="_blank" href="https://github.com/jack-king1">
+                <FaGithub />
+              </a>
+            </IconButton>
+            <IconButton aria-label="Information">
+              <a target="_blank" href="https://www.linkedin.com/in/jackking1/">
+                <FaLinkedin />
+              </a>
+            </IconButton>
+            {/* <IconButton aria-label="Contact Me">
+              <a target="_blank" href="https://www.linkedin.com/in/jackking1/">
+                <FaEnvelope />
+              </a>
+            </IconButton> */}
           </HStack>
         </VStack>
       </Container>
@@ -116,7 +114,7 @@ export default function App() {
           <Heading mb={10} textAlign="center">
             Projects
           </Heading>
-          <SimpleGrid columns={[1, 2, 3]} spacing={10}>
+          <SimpleGrid columns={[1, 2, 3]} gap={10}>
             {["Tickety", "Portfolio", "Design Tool"].map((name, i) => (
               <Box
                 key={i}
@@ -134,14 +132,14 @@ export default function App() {
                   A short description of what this project does and what makes
                   it cool.
                 </Text>
-                <Button
-                  as={Link}
-                  href="#"
-                  colorScheme="teal"
-                  size="sm"
-                  variant="solid"
-                >
-                  View Project
+                <Button colorScheme="teal" size="sm" variant="solid">
+                  <a
+                    href="#"
+                    data-disabled=""
+                    onClick={(e) => e.preventDefault()}
+                  >
+                    View Project
+                  </a>
                 </Button>
               </Box>
             ))}
@@ -155,13 +153,10 @@ export default function App() {
         <Text mb={8} color={textColor}>
           Have a question, collaboration idea, or just want to say hi?
         </Text>
-        <Button
-          as={Link}
-          href="mailto:your@email.com"
-          colorScheme="teal"
-          size="lg"
-        >
-          Email Me
+        <Button colorScheme="teal" size="lg">
+          <a href="#" data-disabled="" onClick={(e) => e.preventDefault()}>
+            Email Me
+          </a>
         </Button>
       </Container>
 
