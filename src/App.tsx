@@ -152,74 +152,142 @@ export default function App() {
             {projects.map((project, i) => (
               <Box
                 key={i}
-                bgGradient="to-r"
-                gradientFrom={isLight ? "blue.100" : "cyan.700"}
-                gradientVia={isLight ? "blue.200" : "cyan.600"}
-                gradientTo={isLight ? "cyan.300" : "cyan.500"}
-                borderWidth="6px"
-                borderColor={isLight ? "teal.100" : "gray.600"}
+                bgGradient="to-br"
+                gradientFrom={isLight ? "blue.50" : "cyan.900"}
+                gradientVia={isLight ? "blue.100" : "cyan.800"}
+                gradientTo={isLight ? "cyan.200" : "cyan.700"}
                 borderRadius="2xl"
-                shadow="md"
-                px={{ base: 4, md: 8 }}
-                py={{ base: 6, md: 8 }}
-                transition="all 0.35s ease"
+                borderWidth="1px"
+                borderColor={isLight ? "blue.100" : "cyan.600"}
+                shadow="lg"
+                overflow="hidden"
+                transition="all 0.4s ease"
                 _hover={{
-                  transform: "translateY(-4px)",
-                  shadow: "xl",
-                  borderColor: "gray.400",
+                  transform: "translateY(-6px)",
+                  shadow: "2xl",
+                  borderColor: isLight ? "teal.300" : "cyan.400",
                 }}
-                display="flex"
-                flexDirection="column"
-                justifyContent="space-between"
-                minH={{ base: "420px", md: "400px" }} // 👈 consistent height
-                maxH={{ base: "420px", md: "400px" }}
               >
                 <Flex
-                  direction={{ base: "column", md: "column" }}
-                  align="flex-start"
-                  flex="1"
-                  mb={4}
+                  direction={{ base: "column", md: "row" }}
+                  align="stretch"
+                  w="100%"
+                  h="100%"
                 >
-                  {/* Project Info */}
-                  <Heading size="lg" mb={2}>
-                    {project.name}
-                  </Heading>
-                  <Text
-                    mb={4}
-                    color={textColor}
-                    fontSize={{ base: "md", md: "lg" }}
-                    noOfLines={3} // 👈 ensures consistent text height
-                  >
-                    {project.overview}
-                  </Text>
-                </Flex>
-
-                {/* Thumbnail + Button container */}
-                <Box mt="auto" w="100%">
+                  {/* Left: Thumbnail (40%) */}
                   <Box
-                    w="100%"
-                    h={{ base: "180px", md: "180px" }}
-                    borderRadius="lg"
-                    overflow="hidden"
-                    shadow="md"
-                    bg={isLight ? "gray.100" : "gray.600"}
+                    flex={{ base: "none", md: "0 0 40%" }}
+                    h={{ base: "220px", md: "100%" }}
                     backgroundImage={`url(${
-                      project.thumbnail ?? "https://via.placeholder.com/400"
+                      project.thumbnail ?? "https://via.placeholder.com/800x600"
                     })`}
                     backgroundSize="cover"
                     backgroundPosition="center"
-                    mb={4}
+                    transition="transform 0.4s ease"
+                    _hover={{ transform: "scale(1.05)" }}
                   />
 
-                  <Button
-                    colorScheme="teal"
-                    size="md"
-                    w="full"
-                    onClick={() => handleProjectSelect(project.name)}
+                  {/* Right: Content (60%) */}
+                  <Box
+                    flex={{ base: "1", md: "0 0 60%" }}
+                    p={{ base: 6, md: 8 }}
+                    display="flex"
+                    flexDirection="column"
+                    justifyContent="space-between"
+                    textAlign={{ base: "center", md: "left" }}
                   >
-                    View Project
-                  </Button>
-                </Box>
+                    {/* Title */}
+                    <Heading
+                      size="lg"
+                      mb={3}
+                      color={isLight ? "blue.900" : "cyan.100"}
+                      letterSpacing="wide"
+                    >
+                      {project.name}
+                    </Heading>
+
+                    {/* Tech Stack Tags */}
+                    <Wrap
+                      justify={{ base: "center", md: "flex-start" }}
+                      mb={4}
+                      spacing={2}
+                    >
+                      {project.techStack.map((tech: string) => (
+                        <Tag.Root
+                          key={tech}
+                          size="md"
+                          borderRadius="full"
+                          borderWidth="1px"
+                          borderColor={isLight ? "teal.200" : "cyan.500"}
+                          bg="transparent"
+                          color={isLight ? "blue.900" : "cyan.100"}
+                          fontWeight="medium"
+                          px={3}
+                          py={1}
+                          transition="all 0.25s ease"
+                          _hover={{
+                            borderColor: isLight ? "teal.400" : "cyan.400",
+                            transform: "translateY(-1px)",
+                          }}
+                        >
+                          <Tag.Label>{tech}</Tag.Label>
+                        </Tag.Root>
+                      ))}
+                    </Wrap>
+
+                    {/* Description */}
+                    <Text
+                      mb={6}
+                      color={isLight ? "blue.800" : "cyan.100"}
+                      fontSize={{ base: "md", md: "lg" }}
+                      noOfLines={4}
+                    >
+                      {project.overview}
+                    </Text>
+
+                    {/* Button */}
+                    <Flex
+                      gap={3}
+                      align={{
+                        base: "center",
+                        sm: "center",
+                        md: "flex-start",
+                      }}
+                    >
+                      <Button
+                        size="md"
+                        fontWeight="medium"
+                        borderRadius="lg"
+                        color={isLight ? "blue.900" : "cyan.100"}
+                        borderWidth="1px"
+                        borderColor={isLight ? "teal.200" : "cyan.500"}
+                        bg={isLight ? "whiteAlpha.700" : "whiteAlpha.200"}
+                        backdropFilter="blur(8px)"
+                        transition="all 0.3s ease"
+                        _hover={{
+                          transform: "translateY(-2px)",
+                          bg: isLight ? "whiteAlpha.900" : "whiteAlpha.300",
+                          borderColor: isLight ? "teal.400" : "cyan.400",
+                          shadow: "md",
+                        }}
+                        onClick={() => handleProjectSelect(project.name)}
+                      >
+                        View Project
+                      </Button>
+
+                      <IconButton
+                        as="a"
+                        target="_blank"
+                        href="https://github.com/jack-king1"
+                        aria-label="Github"
+                        padding={4}
+                      >
+                        <FaGithub />
+                        Github
+                      </IconButton>
+                    </Flex>
+                  </Box>
+                </Flex>
               </Box>
             ))}
           </SimpleGrid>
