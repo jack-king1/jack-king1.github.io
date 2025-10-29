@@ -7,7 +7,7 @@ export const projects = [
     videoUrl: "https://www.youtube.com/embed/dBOkeT0Ndag",
     githubUrl: "https://github.com/jack-king1/tickety",
     liveUrl: "https://tickety.app",
-    thumbnail: "",
+    thumbnail: "./src/assets/ticketydemo.gif",
   },
   {
     name: "Portfolio",

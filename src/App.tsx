@@ -12,12 +12,10 @@ import {
   VStack,
   HStack,
   Wrap,
-  TagLabel,
   Tag,
-  useToken,
   Image,
+  Link,
 } from "@chakra-ui/react";
-import { Avatar, AvatarGroup } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "next-themes";
 import { useState } from "react";
@@ -31,25 +29,7 @@ export default function App() {
 
   const bg = isLight ? "gray.50" : "gray.900";
   const textColor = isLight ? "gray.700" : "gray.200";
-  const cardBg = isLight ? "white" : "gray.800";
   const sectionBg = isLight ? "gray.100" : "gray.800";
-
-  const [teal50, teal100, teal400, cyan200, gray800, gray900, white] = useToken(
-    "colors",
-    [
-      "teal.50",
-      "teal.100",
-      "teal.400",
-      "cyan.200",
-      "gray.800",
-      "gray.900",
-      "white",
-    ]
-  );
-
-  const ticketyGradient = isLight
-    ? `linear(to-r, ${white}, ${teal50}, ${cyan200})`
-    : `linear(to-r, ${gray800}, ${teal400}, ${gray900})`;
 
   // ✅ Make it reactive
   const [currentProject, setCurrentProject] = useState<any>(null);
@@ -112,22 +92,20 @@ export default function App() {
             creative web experiences.
           </Text>
           <HStack gap={4}>
-            <IconButton
-              as="a"
+            <a
               target="_blank"
               href="https://github.com/jack-king1"
               aria-label="Github"
             >
               <FaGithub />
-            </IconButton>
-            <IconButton
-              as="a"
+            </a>
+            <a
               target="_blank"
               href="https://www.linkedin.com/in/jackking1/"
               aria-label="LinkedIn"
             >
               <FaLinkedin />
-            </IconButton>
+            </a>
           </HStack>
         </VStack>
       </Container>
@@ -207,11 +185,7 @@ export default function App() {
                     </Heading>
 
                     {/* Tech Stack Tags */}
-                    <Wrap
-                      justify={{ base: "center", md: "flex-start" }}
-                      mb={4}
-                      spacing={2}
-                    >
+                    <Wrap justify={{ base: "center", md: "flex-start" }} mb={4}>
                       {project.techStack.map((tech: string) => (
                         <Tag.Root
                           key={tech}
@@ -240,7 +214,6 @@ export default function App() {
                       mb={6}
                       color={isLight ? "blue.800" : "cyan.100"}
                       fontSize={{ base: "md", md: "lg" }}
-                      noOfLines={4}
                     >
                       {project.overview}
                     </Text>
@@ -275,16 +248,15 @@ export default function App() {
                         View Project
                       </Button>
 
-                      <IconButton
-                        as="a"
-                        target="_blank"
+                      <Link
                         href="https://github.com/jack-king1"
-                        aria-label="Github"
-                        padding={4}
+                        target="_blank"
                       >
-                        <FaGithub />
-                        Github
-                      </IconButton>
+                        <IconButton aria-label="Github" padding={4}>
+                          <FaGithub />
+                          Github
+                        </IconButton>
+                      </Link>
                     </Flex>
                   </Box>
                 </Flex>
@@ -323,7 +295,7 @@ export default function App() {
           isOpen={!!currentProject}
           onClose={handleCloseModal}
           project={currentProject}
-          cardBg={cardBg}
+          isLight={isLight}
         />
       )}
     </Box>

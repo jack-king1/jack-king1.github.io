@@ -2,20 +2,13 @@
 
 import {
   Dialog,
-  DialogBackdrop,
-  DialogContent,
   DialogHeader,
   DialogBody,
-  DialogCloseTrigger,
   Box,
   Text,
-  Wrap,
-  Tag,
-  TagLabel,
   useBreakpointValue,
 } from "@chakra-ui/react";
 import type { ProjectModalProps } from "../Props/Props";
-import { IconButton } from "@chakra-ui/react";
 import { X } from "lucide-react"; // or use any icon library
 
 export default function ProjectModal({
@@ -82,17 +75,18 @@ export default function ProjectModal({
           <DialogBody>
             {/* Video */}
             <Box mb={4} position="relative" w="100%" pt="56.25%">
-              <Box
-                as="iframe"
+              <iframe
                 src={project.videoUrl}
                 title={`${project.name} demo`}
-                position="absolute"
-                top="0"
-                left="0"
-                w="100%"
-                h="100%"
-                borderRadius="md"
-                border="0"
+                style={{
+                  position: "absolute",
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  border: "0",
+                  borderRadius: "8px",
+                }}
                 allowFullScreen
               />
             </Box>
