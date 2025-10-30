@@ -1,3 +1,5 @@
+import { THUMBNAILS } from "../assets/thumbnails";
+
 export const projects = [
   {
     name: "Tickety",
@@ -7,7 +9,7 @@ export const projects = [
     videoUrl: "https://www.youtube.com/embed/dBOkeT0Ndag",
     githubUrl: "https://github.com/jack-king1/tickety",
     liveUrl: "https://tickety.app",
-    thumbnail: "./src/assets/ticketydemo.gif",
+    thumbnail: THUMBNAILS.TICKETY,
   },
   {
     name: "Portfolio",
@@ -17,7 +19,7 @@ export const projects = [
     videoUrl: "https://www.youtube.com/embed/demo2",
     githubUrl: "https://github.com/jack-king1/portfolio",
     liveUrl: "https://jackking.dev",
-    thumbnail: "",
+    thumbnail: THUMBNAILS.TICKETY,
   },
   {
     name: "Design Tool",
@@ -27,6 +29,6 @@ export const projects = [
     videoUrl: "https://www.youtube.com/embed/demo3",
     githubUrl: "https://github.com/jack-king1/designtool",
     liveUrl: "",
-    thumbnail: "",
+    thumbnail: THUMBNAILS.TICKETY,
   },
 ];

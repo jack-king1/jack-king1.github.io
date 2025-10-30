@@ -15,6 +15,7 @@ import {
   Tag,
   Image,
   Link,
+  Stack,
 } from "@chakra-ui/react";
 import { FaGithub, FaLinkedin, FaSun, FaMoon } from "react-icons/fa";
 import { useTheme } from "next-themes";
@@ -22,6 +23,10 @@ import { useState } from "react";
 import { projects } from "./data/MyProjects";
 import ProjectModal from "./components/sections/ProjectModal";
 import Me from "./assets/me.jpg";
+
+import logoblack from "./assets/portfoliologoblack.png";
+import logowhite from "./assets/portfoliologo.png";
+import TicketyModal from "./components/sections/TicketyModal";
 
 export default function App() {
   const { theme, setTheme } = useTheme();
@@ -57,18 +62,31 @@ export default function App() {
         borderBottom="1px"
         borderColor={isLight ? "gray.200" : "gray.700"}
       >
-        <Heading size="md">Jack King</Heading>
-        <HStack gap={4}>
-          <Button variant="ghost">About</Button>
-          <Button variant="ghost">Projects</Button>
-          <Button variant="ghost">Contact</Button>
-          <IconButton
-            aria-label="Toggle theme"
-            onClick={() => setTheme(isLight ? "dark" : "light")}
-          >
-            {isLight ? <FaMoon /> : <FaSun />}
-          </IconButton>
-        </HStack>
+        <Stack
+          direction={{ base: "column", md: "row" }} // column on mobile, row on desktop
+          justify="space-between"
+          align="center"
+          w="100%"
+        >
+          <Image
+            src={isLight ? logoblack : logowhite}
+            alt="Jack King"
+            transition="transform 0.3s ease"
+            width={150}
+          />
+
+          <HStack gap={4}>
+            <Button variant="ghost">About</Button>
+            <Button variant="ghost">Projects</Button>
+            <Button variant="ghost">Contact</Button>
+            <IconButton
+              aria-label="Toggle theme"
+              onClick={() => setTheme(isLight ? "dark" : "light")}
+            >
+              {isLight ? <FaMoon /> : <FaSun />}
+            </IconButton>
+          </HStack>
+        </Stack>
       </Flex>
 
       {/* Hero */}
@@ -88,23 +106,37 @@ export default function App() {
 
           <Heading>Hey, I'm Jack 👋</Heading>
           <Text fontSize="lg" color={textColor}>
-            A developer passionate about building clean, functional, and
-            creative web experiences.
+            A developer passionate about designing and engineering web
+            experiences that feel as good as they look.
           </Text>
           <HStack gap={4}>
             <a
               target="_blank"
               href="https://github.com/jack-king1"
               aria-label="Github"
+              style={{ transition: "transform 0.2s ease" }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.transform = "scale(1.2)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.transform = "scale(1)")
+              }
             >
-              <FaGithub />
+              <FaGithub size={60} />
             </a>
             <a
               target="_blank"
               href="https://www.linkedin.com/in/jackking1/"
               aria-label="LinkedIn"
+              style={{ transition: "transform 0.2s ease" }}
+              onMouseEnter={(e) =>
+                (e.currentTarget.style.transform = "scale(1.2)")
+              }
+              onMouseLeave={(e) =>
+                (e.currentTarget.style.transform = "scale(1)")
+              }
             >
-              <FaLinkedin />
+              <FaLinkedin size={60} />
             </a>
           </HStack>
         </VStack>
@@ -162,7 +194,6 @@ export default function App() {
                     backgroundSize="cover"
                     backgroundPosition="center"
                     transition="transform 0.4s ease"
-                    _hover={{ transform: "scale(1.05)" }}
                   />
 
                   {/* Right: Content (60%) */}
@@ -221,11 +252,11 @@ export default function App() {
                     {/* Button */}
                     <Flex
                       gap={3}
-                      align={{
-                        base: "center",
-                        sm: "center",
-                        md: "flex-start",
-                      }}
+                      direction={{ base: "row", md: "row" }}
+                      wrap="wrap"
+                      align={{ base: "center", md: "flex-start" }}
+                      justify={{ base: "center", md: "flex-start" }}
+                      textAlign={{ base: "center", md: "left" }}
                     >
                       <Button
                         size="md"
@@ -252,10 +283,25 @@ export default function App() {
                         href="https://github.com/jack-king1"
                         target="_blank"
                       >
-                        <IconButton aria-label="Github" padding={4}>
+                        <Button
+                          size="md"
+                          fontWeight="medium"
+                          borderRadius="lg"
+                          borderWidth="1px"
+                          borderColor={isLight ? "black" : "cyan.500"}
+                          color={isLight ? "white" : "cyan.100"}
+                          bg={isLight ? "black" : "whiteAlpha.200"}
+                          backdropFilter="blur(8px)"
+                          transition="all 0.3s ease"
+                          _hover={{
+                            transform: "translateY(-2px)",
+                            bg: isLight ? "gray.800" : "whiteAlpha.300",
+                            borderColor: isLight ? "gray.900" : "cyan.400",
+                            shadow: "md",
+                          }}
+                        >
                           <FaGithub />
-                          Github
-                        </IconButton>
+                        </Button>
                       </Link>
                     </Flex>
                   </Box>
@@ -291,12 +337,23 @@ export default function App() {
 
       {/* ✅ Render modal if a project is selected */}
       {currentProject && (
-        <ProjectModal
-          isOpen={!!currentProject}
-          onClose={handleCloseModal}
-          project={currentProject}
-          isLight={isLight}
-        />
+        <>
+          {currentProject.name === "Tickety" ? (
+            <TicketyModal
+              isOpen={!!currentProject}
+              onClose={handleCloseModal}
+              project={currentProject}
+              isLight={isLight}
+            />
+          ) : (
+            <ProjectModal
+              isOpen={!!currentProject}
+              onClose={handleCloseModal}
+              project={currentProject}
+              isLight={isLight}
+            />
+          )}
+        </>
       )}
     </Box>
   );
